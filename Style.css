@@ -1,0 +1,82 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    position: absolute;
+    margin: auto;
+    border: 2px solid #e2e2e2;
+    padding-top: 47px;
+    padding-bottom: 47px;
+    padding-inline: 42px;
+    box-sizing: border-box;
+    display: block;
+    height: 300px;
+    width: 500px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #4caf50;
+    font-size:larger ;
+    font-family: "Source Sans Pro", "Arial", sans-serif;
+    box-shadow: 4px 5px 20px 9px #e2e2e2;
+
+}
+
+.button {
+    box-sizing: border-box;
+    width: 420px;
+    height: 58px;
+    margin: 13px;
+    position: relative;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    top: 12px;
+    left: -17px;
+    border-radius: 10px;
+    border: none;
+    color:#ffffff ;
+    font-size: medium;
+}
+
+#deposit {
+    background-color: #4caf50;
+}
+
+#withdraw {
+    background-color: #f44336;
+}
+
+.amount {
+    display: flex;
+    justify-content: center;
+}
+
+/* --- Responsive adjustments for smaller screens --- */
+@media (max-width: 550px) {
+    .card {
+        width: 90vw;          
+        height: auto;         
+        padding-inline: 20px; 
+        box-sizing: border-box;
+    }
+    .button {
+        width: 100%;          
+        margin: 10px 0;       
+        left: 0 !important;   
+        top: 0 !important;    
+        padding-top: 18px;
+        padding-bottom: 18px;
+        box-sizing: border-box;
+    }
+}
